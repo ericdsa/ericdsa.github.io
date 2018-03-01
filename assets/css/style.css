@@ -1,3 +1,43 @@
+@font-face {
+  font-family: DIN;
+  src: url('DIN.otf');  
+}
+
+body {
+  font-family: 'DIN', sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: gray;
+  background-color: #fff;
+}
+
+ul {
+  font-weight: bold;
+  list-style-type: none;
+  margin: 0;
+  padding: 0
+}
+
+li {
+  float: left
+}
+
+li a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  color: gray;
+  width: 80px;
+  text-decoration: none;
+}
+
+li a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+/*
+Old Code
 .portfolio-topbar {
   margin: auto;
 }
@@ -62,14 +102,13 @@
   border: 1px solid transparent;
   border-radius: 4px;
   background-color: #fff;
-  -webkit-transition: box-shadow 0.1s;
-  -o-transition: box-shadow 0.1s;
-  transition: box-shadow 0.1s;
+  text-align: center;
 }
 .navbar-button:hover {
-  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+  text-decoration: underline;
 }
+
 .navbar-button:focus {
   outline: 0;
 }
@@ -88,3 +127,4 @@
   margin-top: 15px;
   color: #555555;
 }
+*/
