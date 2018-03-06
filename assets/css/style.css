@@ -19,18 +19,17 @@
 }
 
 .page-content {
-  font-family: 'DINLight', sans-serif;
-  font-size: 14px;
+  font-family: 'DINRegular', sans-serif;
+  font-size: 16px;
   line-height: 1.42857143;
-  color: gray;
-  background-color: #fff;
-  width: 1200px;
+  color: black;
+  width: 1400px;
   margin: auto;
 }
 
 ul {
   font-family: 'DINRegular';
-  font-size: 20px;
+  font-size: 24px;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -38,6 +37,16 @@ ul {
 
 li {
   float: left
+}
+
+.home-logo {
+  float: right;
+}
+
+.home-logo-a {
+  font-family: 'DINBold';
+  font-size: 28px;
+  color:black;
 }
 
 li a {
@@ -97,4 +106,8 @@ li a:hover {
 
 .hero-shot-background:hover > .hero-shot-title {
   opacity: 1;
+}
+
+.project-table td {
+  vertical-align: top;
 }
