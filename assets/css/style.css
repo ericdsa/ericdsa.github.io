@@ -114,6 +114,7 @@ h1 {
 }
 
 .project-header {
-  position: absolute;
+  position: sticky;
+  top: 0;
   z-index: 1001;
 }
