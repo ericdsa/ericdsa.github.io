@@ -32,39 +32,35 @@ h1 {
   font-size: 36px;
 }
 
-ul {
+.navbar {
+  padding: 20px 20px 100px 20px;
+}
+
+.navbar-item {
   font-family: 'DINRegular';
   font-size: 24px;
-  list-style-type: none;
   margin: 0;
   padding: 0;
-}
-
-li {
-  float: left
-}
-
-.home-logo {
-  float: right;
-}
-
-.home-logo-a {
-  font-family: 'DINBold';
-  font-size: 28px;
-  color:black;
-}
-
-li a {
+  float: left;
   display: block;
   text-align: center;
-  padding: 14px 16px;
+  padding: 14px 16px 14px 16px;
   color: gray;
   text-decoration: none;
 }
 
-li a:hover {
+.navbar-item:hover {
   color: black;
   font-family: 'DINMedium';
+}
+
+.home-logo {
+  float: right;
+  font-family: 'DINBold';
+  font-size: 28px;
+  color:black;
+  text-decoration: none;
+  padding: 14px 16px 14px 16px;
 }
 
 .hero-shot-container {
@@ -115,4 +111,9 @@ li a:hover {
 
 .project-table td {
   vertical-align: top;
+}
+
+.project-header {
+  position: absolute;
+  z-index: 1001;
 }
