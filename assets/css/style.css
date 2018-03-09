@@ -114,7 +114,11 @@ h1 {
 }
 
 .project-header {
+  padding: 5px 3px 5px 3px;
+  background: white;
   position: sticky;
   top: 0;
   z-index: 1001;
+  width: 100%;
+  border-bottom: 2px gray solid;
 }
