@@ -5,7 +5,7 @@
 
 @font-face {
   font-family: DINLight;
-  src: url('../fonts/DINLightAlternate.otf');  
+  src: url('../fonts/DINLightAlternate.otf');
 }
 
 @font-face {
@@ -18,39 +18,48 @@
   src: url('../fonts/DINRegularAlternate.otf');
 }
 
-.page-settings {
-  font-family: 'DINLight', sans-serif;
-  font-size: 14px;
+.page-content {
+  font-family: 'DINRegular', sans-serif;
+  font-size: 16px;
   line-height: 1.42857143;
-  color: gray;
-  background-color: #fff;
-  width: 1200px;
-  margin: auto;
+  color: black;
+  padding: 20px 20px 0px 20px;
 }
 
-ul {
+h1 {
   font-family: 'DINRegular';
-  font-size: 20px;
-  list-style-type: none;
+  font-size: 36px;
+}
+
+.navbar {
+  padding: 0px 0px 60px 0px;
+}
+
+.navbar-item {
+  font-family: 'DINRegular';
+  font-size: 24px;
   margin: 0;
   padding: 0;
-}
-
-li {
-  float: left
-}
-
-li a {
+  float: left;
   display: block;
   text-align: center;
-  padding: 14px 16px;
+  padding: 0px 32px 0px 0px;
   color: gray;
   text-decoration: none;
 }
 
-li a:hover {
+.navbar-item:hover {
   color: black;
   font-family: 'DINMedium';
+}
+
+.home-logo {
+  float: right;
+  font-family: 'DINBold';
+  font-size: 28px;
+  color:black;
+  text-decoration: none;
+  padding: 0px 0px 0px 32px;
 }
 
 .hero-shot-container {
@@ -97,4 +106,24 @@ li a:hover {
 
 .hero-shot-background:hover > .hero-shot-title {
   opacity: 1;
+}
+
+.project-table td {
+  vertical-align: top;
+}
+
+.project-header {
+  background: white;
+  position: sticky;
+  top: 0px;
+  z-index: 1001;
+  border-bottom: 2px solid grey;
+  padding: 2px 0px 0px 0px;
+
+}
+
+.link-top {
+    float: right;
+    text-decoration: none;
+    color: blue;
 }
