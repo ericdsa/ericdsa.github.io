@@ -5,7 +5,7 @@
 
 @font-face {
   font-family: DINLight;
-  src: url('../fonts/DINLightAlternate.otf');  
+  src: url('../fonts/DINLightAlternate.otf');
 }
 
 @font-face {
@@ -23,8 +23,7 @@
   font-size: 16px;
   line-height: 1.42857143;
   color: black;
-  width: 1400px;
-  margin: auto;
+  padding: 20px 20px 0px 20px;
 }
 
 h1 {
@@ -33,7 +32,7 @@ h1 {
 }
 
 .navbar {
-  padding: 20px 20px 100px 20px;
+  padding: 0px 0px 60px 0px;
 }
 
 .navbar-item {
@@ -44,7 +43,7 @@ h1 {
   float: left;
   display: block;
   text-align: center;
-  padding: 14px 16px 14px 16px;
+  padding: 0px 32px 0px 0px;
   color: gray;
   text-decoration: none;
 }
@@ -60,7 +59,7 @@ h1 {
   font-size: 28px;
   color:black;
   text-decoration: none;
-  padding: 14px 16px 14px 16px;
+  padding: 0px 0px 0px 32px;
 }
 
 .hero-shot-container {
@@ -114,11 +113,17 @@ h1 {
 }
 
 .project-header {
-  padding: 5px 3px 5px 3px;
   background: white;
   position: sticky;
-  top: 0;
+  top: 0px;
   z-index: 1001;
-  width: 100%;
-  border-bottom: 2px gray solid;
+  border-bottom: 2px solid grey;
+  padding: 2px 0px 0px 0px;
+
+}
+
+.link-top {
+    float: right;
+    text-decoration: none;
+    color: blue;
 }

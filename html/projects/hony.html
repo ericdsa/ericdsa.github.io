@@ -16,71 +16,95 @@
 </head>
 
 <body>
-  <div class="page-content">
+  <!-- Id for top -->
+  <a id="top"></a>
+
+  <div class="page-content" id="page-content">
     <!-- Navigation -->
     <div class="navbar">
-      <ul>
-        <li>
-          <a href="/index.html">PROJECTS</a>
-        </li>
-        <li>
-          <a href="/html/experience.html">EXPERIENCE</a>
-        </li>
-        <li>
-          <a href="/assets/resume/Eric-D'sa-Resume.pdf">RESUME</a>
-        </li>
-        <li>
-          <a href="/html/about.html">ABOUT</a>
-        </li>
-        <li class="home-logo">
-          <a href="/index.html" class="home-logo-a">ERIC D'SA</a>
-        </li>
-      </ul>
+      <a href="/index.html" class="navbar-item">PROJECTS</a>
+      <a href="/html/experience.html" class="navbar-item">EXPERIENCE</a>
+      <a href="/assets/resume/Eric-D'sa-Resume.pdf" class="navbar-item">RESUME</a>
+      <a href="/html/about.html" class="navbar-item">ABOUT</a>
+      <a href="/index.html" class="home-logo">ERIC D'SA</a>
     </div>
 
+    <!-- Project Header -->
+    <div class="project-header">
+      <h1>HUMANS OF NEW YORK</h1>
+      <span>Description text</span>
+      <a href="#top" class="link-top">Top</a>
+    </div>
 
-    <div class="project-table">
-      <table width="100%">
+    <!-- Project Content -->
+    <div>
+      <table class="project-table" width=100%>
         <tr>
-          <td width="40%">
-            Content
+          <td width=50%>
+            <h1 class="project-content-header">User Research</h1>
+            <p>Tons of text</p>
           </td>
-          <td width="60%" style="float:right">
-            Image
+          <td width=50%>
+            <img src="/assets/img/transit/ideation-image.png" height="400" alt="">
+          </td>
+        </tr>
+        <tr>
+          <td width=50%>
+            <h1>Ideation</h1>
+            <p>Tons of text</p>
+          </td>
+          <td width=50%>
+            <img src="/assets/img/transit/ideation-image.png" height="400" alt="">
+          </td>
+        </tr>
+        <tr>
+          <td width=50%>
+            <h1>User Flow</h1>
+            <p>Tons of text</p>
+          </td>
+          <td width=50%>
+            <img src="/assets/img/transit/transit-user-flow.jpg" height="400" alt="">
+          </td>
+        </tr>
+        <tr>
+          <td width=50%>
+            <h1>Low Fidelity Prototype</h1>
+            <p>Tons of text</p>
+          </td>
+          <td width=50%>
+            <img src="/assets/img/transit/transit-prototype-v1.png" height="400" alt="">
+          </td>
+        </tr>
+        <tr>
+          <td width=50%>
+            <h1>Mid Fidelity Prototype</h1>
+            <p>Tons of text</p>
+          </td>
+          <td width=50%>
+            <img src="/assets/img/transit/transit-prototype-v2.png" height="400" alt="">
+          </td>
+        </tr>
+        <tr>
+          <td width=50%>
+            <h1>Affinity Map + Pivot</h1>
+            <p>Tons of text</p>
+          </td>
+          <td width=50%>
+            <img src="/assets/img/transit/affinity-map.png" height="400" alt="">
+          </td>
+        </tr>
+        <tr>
+          <td width=50%>
+            <h1>Final Prototype</h1>
+            <p>Tons of text</p>
+          </td>
+          <td width=50%>
+            <img src="/assets/img/transit/transit-mockup-dynamic.gif" height="400" alt="">
           </td>
         </tr>
       </table>
     </div>
   </div>
-
-  <!-- Old Code
-    <section class="portfolio-display" id="portfolio">
-      <h2>Humans of New York</h2>
-      <div class="container">
-        <p>While scrolling through the various pictures of Humans of New York, I wondered what exactly made
-        this Facebook page more popular than other similar pages. This question grew into a data mining
-        project, and separate from the analysis, I made mockups of a data visualization tool to piece through
-        various analysis processes.
-        </p>
-        <div class="project-item">
-          <figure>
-            <img class="project-image" src="../assets/img/hony/hony-wordcloud.png" height="450" width="600" alt="">
-            <figcaption class="portfolio-caption">One common text mining technique is word frequency analysis. For this, wordclouds were the most visual
-            method of displaying this data. Sliding bars at the top allow the user to tune different variables to the ranges
-            they want.</figcaption>
-          </figure>
-        </div>
-        <div class="project-item">
-          <figure>
-            <img class="project-image" src="../assets/img/hony/hony-pictures.png" height="450" width="600" alt="">
-            <figcaption class="portfolio-caption">Topic modeling was another technique applied in this project. The program reads the content of a picture, and
-            assigns a topic based on the content. The goal of this page is to easily thumb through pictures of the same topic
-            to look for recurring aspects in the pictures.</figcaption>
-          </figure>
-        </div>
-      </div>
-    </section>
-  -->
 </body>
 
 </html>
