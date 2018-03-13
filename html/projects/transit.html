@@ -32,62 +32,100 @@
     <!-- Project Header -->
     <div class="project-header">
       <h1>TRANSIT</h1>
-      <span>Description text</span>
+      <span>A COLLABORATION WITH TIGER FU</span>
+      <br>
+      <span>Public transit navigation</span>
       <a href="#top" class="link-top">Top</a>
     </div>
 
     <!-- Project Content -->
     <div>
+      <p>
+        Public transit is a nightmare in the Bay Area. Especially in Berkeley, public transit users spend far too much time and effort
+        due to accounting for generally accepted inconsistencies in our public transit system. For our final project in DES
+        INV 15 (Design Methodologies), we decided to create a project tackling this problem.
+      </p>
       <table class="project-table" width=100%>
         <tr>
-          <td width=50%>
-            <h1 class="project-content-header">User Research</h1>
-            <p>Tons of text</p>
+          <td width=50% class="left">
+            <h1 class="project-content-header">USER RESEARCH + EMPATHY MAPPING</h1>
+            <p>To understand our users, we hopped the various bus stops in Berkeley, traveling between them with AC Transit,
+              the local bus system. We chatted with randomly selected users to learn their stories and their pain points
+              with the system. The recurring theme was that most people didn’t know which bus line to use and when to use
+              it. They simply opened up an app and hoped that the route the app suggested was the best one. To make matters
+              worse, there are a multitude of apps that serve AC Transit, each suggesting different routes with variable
+              results.</p>
           </td>
-          <td width=50%>
-            <img src="/assets/img/transit/ideation-image.png" height="400" alt="">
-          </td>
-        </tr>
-        <tr>
-          <td width=50%>
-            <h1>Ideation</h1>
-            <p>Tons of text</p>
-          </td>
-          <td width=50%>
-            <img src="/assets/img/transit/ideation-image.png" height="400" alt="">
+          <td width=50% class="right">
+            <img src="/assets/img/transit/user-research.png" height="400" alt="">
           </td>
         </tr>
         <tr>
           <td width=50%>
-            <h1>User Flow</h1>
-            <p>Tons of text</p>
+            <h1>IDEATION + CONCEPT SKETCHES</h1>
+            <p>From this point, we went through ideation and created concept sketches of our top solutions. We went through
+              web, print, and mobile-based solutions, and realized that adding another app or visiting another website only
+              adds an additional pain point. Users don’t want to have to open more services to plan their commute. We finally
+              decided on a touchscreen terminal that would placed at bus stops.</p>
           </td>
           <td width=50%>
-            <img src="/assets/img/transit/transit-user-flow.jpg" height="400" alt="">
-          </td>
-        </tr>
-        <tr>
-          <td width=50%>
-            <h1>Low Fidelity Prototype</h1>
-            <p>Tons of text</p>
-          </td>
-          <td width=50%>
-            <img src="/assets/img/transit/transit-prototype-v1.png" height="400" alt="">
+            <img src="/assets/img/transit/concept-sketches.png" height="400" alt="">
           </td>
         </tr>
         <tr>
           <td width=50%>
-            <h1>Mid Fidelity Prototype</h1>
-            <p>Tons of text</p>
+            <h1>USER FLOW</h1>
+            <p>We planned our terminal screen around three main screens: bus stops, bus lines, and buses nearby, as these were
+              the top three priorities we determined from our user research. Bus stops and nearby buses were useful in determining
+              what buses could be caught quickly and in possible destinations, and the bus lines were to decide how a user
+              would move from start to destination.</p>
           </td>
           <td width=50%>
-            <img src="/assets/img/transit/transit-prototype-v2.png" height="400" alt="">
+            <img src="/assets/img/transit/user-flow.jpg" height="400" alt="">
           </td>
         </tr>
         <tr>
           <td width=50%>
-            <h1>Affinity Map + Pivot</h1>
-            <p>Tons of text</p>
+            <h1>LOW FIDELITY PROTOTYPE</h1>
+            <p>
+              For our first prototype, we printed out screens of Google Maps and drew information on top to mock our wireframes. We then
+              went to users and asked typical navigation prompts, such as traveling from their house to the college campus.
+              As users flipped through different pages to navigate our screens, we asked followup questions as needed. From
+              this, we learned three main points: 1) Visualizing bus lines helped users greatly: Most of our users only knew
+              the names of bus lines that they used on an ongoing basis; they didn’t have a visual understanding of where
+              bus lines traveled. 2) Navigating between screens was an easy process: Even without the interactive capabilities
+              of a web or mobile prototype, users were able to quickly navigate between our physical pages. 3) Lots of unnecessary
+              interactions from flipping between screens: Although it was easy to navigate, many users ended up switching
+              back and forth between screens to find what they wanted (e.g. finding a bus nearby, then going to the bus line
+              screen to see where the bus line went).
+            </p>
+          </td>
+          <td width=50%>
+            <img src="/assets/img/transit/low-fidelity-1.png" height="400" alt="">
+            <img src="/assets/img/transit/low-fidelity-2.png" height="400" alt="">
+          </td>
+        </tr>
+        <tr>
+          <td width=50%>
+            <h1>MEDIUM FIDELITY PROTOTYPE</h1>
+            <p>For our next prototype, we moved to a digital prototype to make it feel more like an actual touchscreen terminal.
+              The screens and user flow were not changed; however, we wanted to see if a digital prototype led to different
+              user interactions. We arrived at the conclusion that there was a lot of friction between subpages of our prototype,
+              and that while visualizing bus lines helped, the content had to be reorganized.</p>
+          </td>
+          <td width=50%>
+            <img src="/assets/img/transit/medium-fidelity.png" height="400" alt="">
+          </td>
+        </tr>
+        <tr>
+          <td width=50%>
+            <h1>AFFINITY MAPPING + PIVOT</h1>
+            <p>To reorganize our screens, we relooked at our user flow, and highlighted points of high friction. After attempting
+              to shuffle around our screens, we realized we were failing to address our users’ needs. When users think of
+              travel, they focus not on their origin, but on their destination. We had spent time building a solution for
+              users to explore information on bus routes, when really users only cared about reaching their destination,
+              and not how they got there. We pivoted, focusing instead on creating a routing interface that would achieve
+              users’ needs at a bus stop.</p>
           </td>
           <td width=50%>
             <img src="/assets/img/transit/affinity-map.png" height="400" alt="">
@@ -95,11 +133,19 @@
         </tr>
         <tr>
           <td width=50%>
-            <h1>Final Prototype</h1>
-            <p>Tons of text</p>
+            <h1>FINAL PROTOTYPE</h1>
+            <p>DEFAULT SLEEP SCREEN The terminal spends most of time sleeping, only active for a few minutes when someone is
+              waiting at the bus stop. To conserve energy, the default screen is a black screen with a touch icon on it,
+              to indicate to a user to touch the screen to activate. BLUR To not detract from the focus of the map, we added
+              blur onto the edges when additional prompts or features were displayed. EMPHASIS ON TOUCH We noticed in our
+              research that many older people would point to a start and destination on a map, then determine a transit route.
+              Instead of inputting addresses, we wanted to replicate the more natural feeling of pointing to locations, and
+              emphasized this feeling in our terminal. DISPLAYING ROUTES Routes were semitransparently laid over the main
+              map, with details on each route displayed at the bottom. We prioritized the line name, wait time, and travel
+              time as the main characteristics a user would want to know when choosing between different routes.</p>
           </td>
           <td width=50%>
-            <img src="/assets/img/transit/transit-mockup-dynamic.gif" height="400" alt="">
+            <img src="/assets/img/transit/terminal.gif" height="400" alt="">
           </td>
         </tr>
       </table>
