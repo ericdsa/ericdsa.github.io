@@ -26,11 +26,6 @@
   padding: 20px 20px 0px 20px;
 }
 
-h1 {
-  font-family: 'DINRegular';
-  font-size: 36px;
-}
-
 .navbar {
   padding: 0px 0px 60px 0px;
 }
@@ -118,7 +113,7 @@ h1 {
   top: 0px;
   z-index: 1001;
   border-bottom: 2px solid grey;
-  padding: 2px 0px 0px 0px;
+  padding: 20px 0px 0px 0px;
 
 }
 
@@ -129,9 +124,38 @@ h1 {
 }
 
 .left {
-  padding: 0px 20px 0px 0px; 
+  width: 50%;
+  padding: 0px 70px 0px 0px;
 }
 
 .right {
-  padding: 0px 0px 0px 20px;
+  width: 50%;
+  padding: 0px 0px 0px 70px;
+}
+
+.project-header-title {
+    font-family: 'DINBold';
+    font-size: 36px;
+    display: block;
+    padding: 0px 0px 20px 0px;
+}
+
+.project-content-header {
+    font-family: 'DINBold';
+    display: block;
+    padding: 0px 0px 20px 0px;
+}
+
+.project-header-italic {
+    display: block;
+}
+
+.project-content-subheader {
+    font-family: 'DINBold';
+    color: gray;
+}
+
+.project-content-p {
+  display: block;
+  padding: 0px 0px 80px 0px;
 }
