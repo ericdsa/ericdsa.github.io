@@ -18,16 +18,22 @@
   src: url('../fonts/DINRegularAlternate.otf');
 }
 
+* {
+  margin: 0px;
+  padding: 0px;
+  outline: none;
+  border: 0px;
+}
 .page-content {
   font-family: 'DINLight';
-  font-size: 20px;
+  font-size: 16px;
   line-height: 1.42857143;
   color: black;
-  padding: 20px 10% 0px 10%;
+  padding: 0px 5% 0px 5%;
 }
 
 .navbar {
-  padding: 0px 0px 60px 0px;
+  padding: 20px 0px 60px 0px;
 }
 
 .navbar-item {
@@ -107,13 +113,10 @@
 }
 
 .project-header {
-  background: white;
   position: sticky;
   top: 0px;
   z-index: 1001;
-  border-bottom: 2px solid grey;
   padding: 20px 0px 0px 0px;
-
 }
 
 .link-top {
@@ -134,9 +137,9 @@
 
 .project-header-title {
     font-family: 'DINBold';
-    font-size: 36px;
+    font-size: 28px;
     display: block;
-    padding: 0px 0px 20px 0px;
+    padding: 0px 0px 5px 0px;
 }
 
 .project-content-header {
@@ -159,7 +162,7 @@
   display: block;
 }
 
-table {
+.project-table {
   border-collapse: separate;
   border-spacing: 0px 100px;
 }
