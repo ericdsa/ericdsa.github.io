@@ -18,26 +18,26 @@
   src: url('../fonts/DINRegularAlternate.otf');
 }
 
+* {
+  margin: 0px;
+  padding: 0px;
+  outline: none;
+  border: 0px;
+}
 .page-content {
-  font-family: 'DINRegular', sans-serif;
-  font-size: 16px;
+  font-family: 'DINRegular';
+  font-size: 20px;
   line-height: 1.42857143;
   color: black;
-  padding: 20px 20px 0px 20px;
-}
-
-h1 {
-  font-family: 'DINRegular';
-  font-size: 36px;
+  padding: 0px 5% 0px 5%;
 }
 
 .navbar {
-  padding: 0px 0px 60px 0px;
+  padding: 20px 0px 60px 0px;
 }
 
 .navbar-item {
   font-family: 'DINRegular';
-  font-size: 24px;
   margin: 0;
   padding: 0;
   float: left;
@@ -60,6 +60,12 @@ h1 {
   color:black;
   text-decoration: none;
   padding: 0px 0px 0px 32px;
+}
+
+.hero-shots {
+  padding: 70px 0px 0px 0px;
+  margin: auto;
+  border-spacing: 50px 0px;
 }
 
 .hero-shot-container {
@@ -113,17 +119,63 @@ h1 {
 }
 
 .project-header {
-  background: white;
   position: sticky;
   top: 0px;
   z-index: 1001;
-  border-bottom: 2px solid grey;
-  padding: 2px 0px 0px 0px;
-
+  padding: 20px 0px 0px 0px;
+  transition: background-color 0.2s, box-shadow 0.2s;
 }
 
+/*
 .link-top {
     float: right;
     text-decoration: none;
     color: blue;
+    padding: 0px 0px 10px 0px;
+}
+*/
+
+.left {
+  width: 50%;
+  padding: 0px 70px 0px 0px;
+}
+
+.right {
+  width: 50%;
+  padding: 0px 0px 0px 70px;
+}
+
+.project-header-title {
+    font-family: 'DINBold';
+    font-size: 28px;
+    display: block;
+    padding: 0px 0px 5px 0px;
+}
+
+.project-content-header {
+    font-family: 'DINBold';
+    font-size: 28px;
+    display: block;
+    padding: 0px 0px 20px 0px;
+}
+
+.project-header-italic {
+    display: block;
+    padding: 0px 0px 10px 0px;
+}
+
+.project-content-subheader {
+    font-family: 'DINBold';
+    color: gray;
+    display: block;
+    padding: 10px 0px 10px 0px;
+}
+
+.project-content-p {
+  display: block;
+}
+
+.project-table {
+  border-collapse: separate;
+  border-spacing: 0px 100px;
 }
