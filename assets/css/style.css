@@ -66,12 +66,11 @@
 .hero-shots {
   padding: 70px 0px 0px 0px;
   margin: auto;
-  border-spacing: 50px 0px;
+  border-spacing: 20px 0px;
 }
 
 .hero-shot-container {
-  width: 400px;
-  height: 300px;
+  width: 300px;
   position: relative;
   color: white;
 }
@@ -103,11 +102,11 @@
   text-align: center;
   opacity: 0;
   z-index: 1001;
-  color: black;
+  color: white;
 }
 
 .hero-shot-background:hover {
-  background-color: white;
+  background-color: black;
   opacity: 0.9;
 }
 
