@@ -24,9 +24,10 @@
   outline: none;
   border: 0px;
 }
+
 .page-content {
   font-family: 'DINRegular';
-  font-size: 20px;
+  font-size: 16px;
   line-height: 1.42857143;
   color: black;
   padding: 0px 5% 0px 5%;
@@ -64,13 +65,12 @@
 
 .hero-shots {
   padding: 70px 0px 0px 0px;
+  width: 90%;
   margin: auto;
-  border-spacing: 50px 0px;
+  border-spacing: 20px 0px;
 }
 
 .hero-shot-container {
-  width: 400px;
-  height: 300px;
   position: relative;
   color: white;
 }
@@ -102,11 +102,11 @@
   text-align: center;
   opacity: 0;
   z-index: 1001;
-  color: black;
+  color: white;
 }
 
 .hero-shot-background:hover {
-  background-color: white;
+  background-color: black;
   opacity: 0.9;
 }
 
@@ -178,4 +178,15 @@
 .project-table {
   border-collapse: separate;
   border-spacing: 0px 100px;
+}
+
+.left-experience {
+  width: 70%;
+  padding: 0px 70px 0px 0px;
+}
+
+.right-experience {
+  width: 30%;
+  padding: 0px 0px 0px 70px;
+  text-align: right;
 }
