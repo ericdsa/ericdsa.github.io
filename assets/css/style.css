@@ -168,10 +168,11 @@
     font-family: 'DINBold';
     color: gray;
     display: block;
-    padding: 10px 0px 10px 0px;
+    padding: 0px 0px 10px 0px;
 }
 
 .project-content-p {
+  padding: 0px 0px 10px 0px;
   display: block;
 }
 
