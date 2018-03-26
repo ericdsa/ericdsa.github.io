@@ -179,3 +179,14 @@
   border-collapse: separate;
   border-spacing: 0px 100px;
 }
+
+.left-experience {
+  width: 70%;
+  padding: 0px 70px 0px 0px;
+}
+
+.right-experience {
+  width: 30%;
+  padding: 0px 0px 0px 70px;
+  text-align: right;
+}
