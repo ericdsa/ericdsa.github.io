@@ -197,5 +197,10 @@
 }
 
 .project-nav {
-  float: right;
+  padding: 20px 0px 0px 0px;
+  color: gray;
+}
+
+.project-nav:hover {
+  color: black;
 }
