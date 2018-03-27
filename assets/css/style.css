@@ -38,7 +38,7 @@
 }
 
 .navbar-item {
-  font-family: 'DINRegular';
+  font-family: 'DINMedium';
   margin: 0;
   padding: 0;
   float: left;
@@ -51,7 +51,6 @@
 
 .navbar-item:hover {
   color: black;
-  font-family: 'DINMedium';
 }
 
 .home-logo {
