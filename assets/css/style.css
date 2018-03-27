@@ -159,6 +159,10 @@
     padding: 0px 0px 20px 0px;
 }
 
+.fa-chevron-left {
+  color: black;
+}
+
 .project-header-italic {
     display: block;
     padding: 0px 0px 10px 0px;
@@ -190,4 +194,13 @@
   width: 30%;
   padding: 0px 0px 0px 70px;
   text-align: right;
+}
+
+.project-nav {
+  padding: 20px 0px 0px 0px;
+  color: gray;
+}
+
+.project-nav:hover {
+  color: black;
 }
