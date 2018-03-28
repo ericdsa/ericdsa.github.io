@@ -29,8 +29,13 @@
   font-family: 'DINRegular';
   font-size: 16px;
   line-height: 1.6em;
+  letter-spacing: 0.02em;
   color: black;
   padding: 0px 5% 0px 5%;
+}
+
+.capital-letter {
+  letter-spacing: 0.05em;
 }
 
 .navbar {
