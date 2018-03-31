@@ -34,6 +34,15 @@
   padding: 0px 5% 0px 5%;
 }
 
+.page-content-2 {
+  font-family: 'DINRegular';
+  font-size: 16px;
+  line-height: 1.6em;
+  letter-spacing: 0.02em;
+  color: black;
+  padding: 0px 15% 0px 15%;
+}
+
 .capital-letter {
   letter-spacing: 0.05em;
 }
@@ -161,6 +170,14 @@
     font-size: 28px;
     display: block;
     padding: 0px 0px 20px 0px;
+}
+
+.project-content-header-2 {
+    font-family: 'DINBold';
+    font-size: 46px;
+    display: block;
+    padding: 0px 0px 20px 0px;
+    line-height: 1.6em;
 }
 
 .fa-chevron-left {
