@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<!-- metadata and title -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Eric D'sa - Website containing projects and experience">
+  <meta name="author" content="Eric D'sa">
+
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free-webfonts/css/fa-solid.css">
+  <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free-webfonts/css/fontawesome.css">
+  <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+
+  <title>Eric D'sa</title>
+</head>
+
+<body>
+  <!-- Id for top -->
+  <a id="top"></a>
+
+  <!-- Navigation -->
+  <div class="page-content">
+    <div class="navbar">
+      <a href="/" class="navbar-item capital-letter">PROJECTS</a>
+      <a href="/experience.html" class="navbar-item capital-letter">EXPERIENCE</a>
+      <a href="/assets/resume/Eric-D'sa-Resume.pdf" class="navbar-item capital-letter">RESUME</a>
+      <a href="/about.html" class="navbar-item capital-letter">ABOUT</a>
+      <a href="/" class="home-logo capital-letter">ERIC D'SA</a>
+    </div>
+  </div>
+
+  <!-- Project Header -->
+  <div class="project-header">
+    <div class="page-content">
+      <table width=100%>
+        <tr>
+          <td>
+            <span class="project-header-title capital-letter">VOICE ALARM CLOCK</span>
+            <!-- <a href="#top" class="link-top">Top</a>-->
+            <span class="project-header-italic capital-letter">A DIFFERENT WAY OF WAKING UP</span>
+          </td>
+          <td style="float: right">
+            <a style="color:black" href="/sdj.html"><span class="fas fa-chevron-left project-nav"></span></a>
+            &emsp;
+            <a style="color:black" href="/egb.html"><span class="fas fa-chevron-right project-nav"></span></a>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <!-- Project Content -->
+  <div class="page-content">
+    <div>
+      <table class="project-table" width=100%>
+        <tr>
+          <td class="left">
+            Intro to how the idea came up
+          </td>
+          <td class="right">
+            <strong>Tools: </strong>Pen + Paper, Voice, Adobe Illustrator
+          </td>
+        </tr>
+        <tr>
+          <td class="left">
+            <span class="project-content-header capital-letter">IDEATION</span>
+            <span class="project-content-p">
+              Description - need a different clock, different ideas
+            </span>
+          </td>
+          <td class="right">
+            <img src="/assets/img/voice_clock/" width="100%" alt="">
+          </td>
+        </tr>
+        <tr>
+          <td class="left">
+            <span class="project-content-header capital-letter">CONCEPT SKETCHES + USE CASES</span>
+            <span class="project-content-p">
+              Description - analogy of voice to someone else waking you up
+            </span>
+          </td>
+          <td class="right">
+            <img src="/assets/img/voice_clock/" width="50%" alt="">
+          </td>
+        </tr>
+        <tr>
+          <td class="left">
+            <span class="project-content-header capital-letter">CONVERSATION BRAINSTORM</span>
+            <span class="project-content-p">
+              Description - thinking about general flow, inspiration from parent waking you up
+            </span>
+          </td>
+          <td class="right">
+            <img src="/assets/img/voice_clock" width="20%" alt="">
+          </td>
+        </tr>
+        <tr>
+          <td class="left">
+            <span class="project-content-header capital-letter">SCRIPT V1</span>
+            <span class="project-content-p">
+              Description - goals of first script
+            </span>
+          </td>
+          <td class="right">
+            <img src="/assets/img/transit/low-fidelity-1.png" width="49%" alt="">
+            <img src="/assets/img/transit/low-fidelity-2.png" width="49%" alt="">
+          </td>
+        </tr>
+        <tr>
+          <td class="left">
+            <span class="project-content-header capital-letter">TESTING + SCRIPT V2</span>
+            <span class="project-content-p">
+              Description - what v1 didn't handle, script v2
+            </span>
+          </td>
+          <td class="right">
+            <img src="/assets/img/transit/medium-fidelity.png" width="100%" alt="">
+          </td>
+        </tr>
+        <tr>
+          <td class="left">
+            <span class="project-content-header capital-letter">SCRIPT V3</span>
+            <span class="project-content-p">
+              Description - more testing + script v3, made it look nice
+            </span>
+          </td>
+          <td class="right">
+            <img src="/assets/img/transit/affinity-map.png" width="100%" alt="">
+          </td>
+        </tr>
+        <tr>
+          <td class="left">
+            <span class="project-content-header capital-letter">SCRIPT V4</span>
+            <span class="project-content-p">
+              Description - script v4
+            </span>
+          </td>
+          <td class="right">
+            <img src="/assets/img/voice_clock" width="100%" alt="">
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <script>
+
+    $(document).ready(function () {
+      $(window).on("scroll", function () {
+        var scrollAmount = $(window).scrollTop();
+        console.log(scrollAmount);
+        console.log(scrollAmount < 20);
+
+        if (scrollAmount < 80) {
+          $(".project-header").css("background-color", "transparent");
+          $(".project-header").css("box-shadow", "none");
+        } else {
+          $(".project-header").css("background-color", "white");
+          $(".project-header").css("box-shadow", "0px 1px 3px gray");
+        }
+      })
+    })
+
+  </script>
+</body>
+
+</html>
