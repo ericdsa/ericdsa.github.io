@@ -213,8 +213,6 @@
     $(document).ready(function () {
       $(window).on("scroll", function () {
         var scrollAmount = $(window).scrollTop();
-        console.log(scrollAmount);
-        console.log(scrollAmount < 20);
 
         if (scrollAmount < 80) {
           $(".project-header").css("background-color", "transparent");
