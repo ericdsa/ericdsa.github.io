@@ -25,9 +25,9 @@
   <div class="page-content">
     <div class="navbar">
       <a href="/" class="navbar-item capital-letter">PROJECTS</a>
-      <a href="/experience.html" class="navbar-item capital-letter">EXPERIENCE</a>
+      <a href="/html/experience.html" class="navbar-item capital-letter">EXPERIENCE</a>
       <a href="/assets/resume/Eric-D'sa-Resume.pdf" class="navbar-item capital-letter">RESUME</a>
-      <a href="/about.html" class="navbar-item capital-letter">ABOUT</a>
+      <a href="/html/about.html" class="navbar-item capital-letter">ABOUT</a>
       <a href="/" class="home-logo capital-letter">ERIC D'SA</a>
     </div>
   </div>
@@ -43,9 +43,13 @@
             <span class="project-header-italic capital-letter">MUSIC TRACK SORTING</span>
           </td>
           <td style="float: right">
-            <a style="color:black" href="/html/projects/egb.html"><span class="fas fa-chevron-left project-nav"></span></a>
+            <a style="color:black" href="/html/projects/egb.html">
+              <span class="fas fa-chevron-left project-nav"></span>
+            </a>
             &emsp;
-            <a style="color:black" href="/html/projects/transit.html"><span class="fas fa-chevron-right project-nav"></span></a>
+            <a style="color:black" href="/html/projects/transit.html">
+              <span class="fas fa-chevron-right project-nav"></span>
+            </a>
           </td>
         </tr>
       </table>
@@ -64,7 +68,7 @@
             of their playlist.
           </td>
           <td class="right">
-            <strong>Tools: </strong>Pen + Paper, Adobe Illustrator, Adobe XD
+            <strong>Tools: </strong>Pen + Paper, Adobe XD
           </td>
         </tr>
         <tr>
@@ -131,6 +135,8 @@
     $(document).ready(function () {
       $(window).on("scroll", function () {
         var scrollAmount = $(window).scrollTop();
+        console.log(scrollAmount);
+        console.log(scrollAmount < 20);
 
         if (scrollAmount < 80) {
           $(".project-header").css("background-color", "transparent");
