@@ -19,22 +19,13 @@
 }
 
 * {
-  margin: 0px;
-  padding: 0px;
-  outline: none;
   border: 0px;
+  outline: none;
 }
 
 .page-content {
-  font-family: 'DINRegular';
-  font-size: 16px;
-  line-height: 1.6em;
-  letter-spacing: 0.02em;
-  color: black;
-  padding: 0px 15% 0px 15%;
-}
-
-.page-content-2 {
+  margin: auto;
+  max-width: 700px;
   font-family: 'DINRegular';
   font-size: 16px;
   line-height: 1.6em;
@@ -54,7 +45,6 @@
 .navbar-item {
   font-family: 'DINMedium';
   margin: 0;
-  padding: 0;
   float: left;
   display: block;
   text-align: center;
@@ -170,14 +160,6 @@
     font-size: 28px;
     display: block;
     padding: 0px 0px 20px 0px;
-}
-
-.project-content-header-2 {
-    font-family: 'DINBold';
-    font-size: 46px;
-    display: block;
-    padding: 0px 0px 20px 0px;
-    line-height: 1.6em;
 }
 
 .fa-chevron-left {
