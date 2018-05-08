@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<!-- metadata and title -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Eric D'sa - Website containing projects and experience">
+  <meta name="author" content="Eric D'sa">
+
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free-webfonts/css/fa-solid.css">
+  <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free-webfonts/css/fontawesome.css">
+  <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+
+  <title>Eric D'sa</title>
+</head>
+
+<body>
+  <!-- Id for top -->
+  <a id="top"></a>
+
+  <!-- Navigation -->
+  <div class="page-content">
+    <div class="navbar">
+      <a href="/" class="navbar-item capital-letter">PROJECTS</a>
+      <a href="/experience.html" class="navbar-item capital-letter">EXPERIENCE</a>
+      <a href="/assets/resume/Eric-D'sa-Resume.pdf" class="navbar-item capital-letter">RESUME</a>
+      <a href="/about.html" class="navbar-item capital-letter">ABOUT</a>
+      <a href="/" class="home-logo capital-letter">ERIC D'SA</a>
+    </div>
+  </div>
+
+  <!-- Project Header -->
+  <div class="project-header">
+    <div class="page-content">
+      <table width=100%>
+        <tr>
+          <td>
+            <span class="project-header-title capital-letter">SPOTIFY DJ</span>
+            <!-- <a href="#top" class="link-top">Top</a>-->
+            <span class="project-header-italic capital-letter">MUSIC TRACK SORTING</span>
+          </td>
+          <td style="float: right">
+            <a style="color:black" href="/html/projects/egb.html"><span class="fas fa-chevron-left project-nav"></span></a>
+            &emsp;
+            <a style="color:black" href="/html/projects/transit.html"><span class="fas fa-chevron-right project-nav"></span></a>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <!-- Project Content -->
+  <div class="page-content">
+    <div>
+      <span class="project-content-p"></span>
+      <span class="project-content-p">
+        While planning music for a dance party a few summers ago, I hit a roadblock - I had no idea how quickly music would speed
+        up or slow down, nor what music should play relative to each moment in the party. At CalHacks 3.0, I hacked together
+        an initial data visualization prototype to address this. Users can import their playlists and see various visualizations
+        of their playlist.
+      </span>
+      <span class="project-content-p">
+        <strong>Tools: </strong>Pen + Paper, Adobe Illustrator, Adobe XD
+      </span>
+      <span class="project-content-p"></span>
+
+      <span class="project-content-header capital-letter">IDEATION</span>
+      <span class="project-content-p">
+        We considered many ideas, and the main struggle was on how much control to give to the user vs operations done by a machine
+        or algorithm.
+      </span>
+      <img src="" width="100%" alt="">
+      <span class="project-content-p"></span>
+
+      <span class="project-content-header capital-letter">CONCEPT SKETCHES</span>
+      <span class="project-content-p">
+        We eventually finalized on emphasizing visualizations of existing playlists, the ability to control from afar when the songs
+        should crossfade, and an algorithm to automatically sort songs in the optimal order for a party. We sketched
+        what the mobile and web controls would look like and made a user flow. divided in to main screens: see playlist,
+        add song, organize.
+      </span>
+      <img src="/assets/img/sdj/Concept Sketches/concept-sketch-1.jpg" width="57%" alt="">
+      <img src="/assets/img/sdj/Concept Sketches/concept-sketch-2.jpg" width="42%" alt="">
+      <span class="project-content-p"></span>
+
+      <span class="project-content-header capital-letter">WIREFRAMES</span>
+      <span class="project-content-p">
+        We made initial wireframes to explore placement of content, new user experience, and user interactions. Focus on seeing playlist,
+        add song, organize.
+      </span>
+      <img src="/assets/img/sdj/v7 Screens/288ppi/Default Page.png" width="32%" alt="">
+      <img src="/assets/img/sdj/v7 Screens/288ppi/Default Page copy 3.png" width="32%" alt="">
+      <img src="/assets/img/sdj/v7 Screens/288ppi/Default Page copy 8.png" width="32%" alt="">
+      <span class="project-content-p"></span>
+
+      <span class="project-content-header capital-letter">FINAL PROTOTYPE</span>
+      <span class="project-content-p">
+        We then went to a final prototype, which you can try out below! We also added a mobile component for controlling the playlist
+        from afar. Focus on onboarding, button interactions, controlling after you set an order.
+      </span>
+      <img src="/assets/img/sdj/v7 Screens/288ppi/Default Page copy 10.png" width="30%" alt="">
+      <img src="/assets/img/sdj/v7 Screens/288ppi/Default Page copy 6.png" width="30%" alt="">
+      <img src="/assets/img/sdj/v7 Screens/288ppi/Default Page copy 9.png" width="30%" alt="">
+      <img src="/assets/img/sdj/Smartphone Control Screen/288ppi/Artboard 1.png" width="8%" alt="">
+      <span class="project-content-p"></span>
+    </div>
+  </div>
+  <script>
+
+    $(document).ready(function () {
+      $(window).on("scroll", function () {
+        var scrollAmount = $(window).scrollTop();
+
+        if (scrollAmount < 80) {
+          $(".project-header").css("background-color", "transparent");
+          $(".project-header").css("box-shadow", "none");
+        } else {
+          $(".project-header").css("background-color", "white");
+          $(".project-header").css("box-shadow", "0px 1px 3px gray");
+        }
+      })
+    })
+
+  </script>
+</body>
+
+</html>
