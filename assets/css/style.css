@@ -159,7 +159,7 @@
     font-family: 'DINBold';
     font-size: 28px;
     display: block;
-    padding: 0px 0px 20px 0px;
+    padding: 0px 0px 25px 0px;
 }
 
 .fa-chevron-left {
@@ -179,7 +179,7 @@
 }
 
 .project-content-p {
-  padding: 0px 0px 10px 0px;
+  padding: 0px 0px 50px 0px;
   display: block;
 }
 
