@@ -120,6 +120,7 @@
 
       <span class="project-content-header capital-letter">EVALUATION OF IDEATION CONCEPTS</span>
       <span class="project-content-p">
+        <!-- TODO -->
         Before deciding the interface we would use, we decided to narrow down
         on what the alarm clock would do. Then, we could decide the interface
         best suited for the function. We decided on three possible functions:
@@ -146,6 +147,7 @@
 
       <span class="project-content-header capital-letter">SCRIPT V1</span>
       <span class="project-content-p">
+        <!-- TODO -->
         For our first script, we drew inspiration from the most effective alarm
         clock we knew - our parents. In the general form, someone wakes you up
         by shaking you, followed by a call to action: "You're late for school!"
@@ -162,46 +164,45 @@
 
       <span class="project-content-header capital-letter">TESTING + SCRIPT V2</span>
       <span class="project-content-p">
-        Description - what v1 didn't handle, script v2
+        <!-- TODO -->
+        Our main feedback from the first script was that most people take a few
+        seconds to remember their events in the next day. To reduce this friction,
+        we considered a calendar import, to make it easier to check the events
+        happening the next day.
 
-        Change log
-
-        Added calendar import - easier to check if there are events, user doesn't have to remember
-        reasoning - some poeple can't think of events off the top of their head
-        horizontal layout
-
+        We didn't want the alarm clock to automatically
+        set alarms based on the calendar; we wanted to retain user verification
+        and input. For our second version, we added a calendar read function.
+        The alarm clock will read events happening the next day for the user.
+        However, the user still tells the alarm clock what event and time
+        to set the alarm clock for.
       </span>
       <img src="/assets/img/voice_clock/Script-v2-img/288ppi/Artboard 1.png" width="49%" alt="">
 
       <span class="project-content-header capital-letter">SCRIPT V3</span>
       <span class="project-content-p">
-        Description - more testing + script v3, made it look nice
+        <!-- TODO -->
+        Our feedback was primarily of issues with the flow of the script:
 
-        Change log
+        1) Removed Setup: most people set an alarm day by day, not regularly. We had
+        kept a setup for a repeating alarm as a legacy feature - we removed it
+        after this iteration.
 
-        Removed setup - most people set an alarm day by day, not regularly
+        2) Intents: To generalize the script for any time and/or event, we
+        added intents and variables for time and event (inspired by the Alexa
+        Skills Kit). For example, "Set my alarm at {timeToSet} for {eventName}."
 
-        Intents - hear current alarms, set new alarm
-        Adding slots
-
-        Confirming user heard events
-
-        For Illustrator
-          Write slots above (timeToSet, eventName)
-          "Set my alarm at {timeToSet} for {eventName}"
-          Multiple routes from this point (timeToSet, eventName, timeToSet + eventName)
-          Handle each route separately and feed back into main route
-
+        3) Confirmations: To double check the alarm clock heard user input correctly,
+        it reads our user input in a confirmation sentence before proceeding
+        to the next task.
       </span>
       <img src="/assets/img/voice_clock/Script-v3-img/288ppi/Artboard 1.png" width="49%" alt="">
 
       <span class="project-content-header capital-letter">SCRIPT V4</span>
       <span class="project-content-p">
-        Description - script v4
-
-        Change Log
-
-        Added delete alarm path (CRUD)
+        <!-- TODO -->
+        Sometimes, users added alarms, but couldn't delete them afterwards. In
+        this version, we added an option to delete an alarm.        
       </span>
       <img src="/assets/img/voice_clock/Script-v4-img/288ppi/Artboard 1.png" width="49%" alt="">
     </div>
