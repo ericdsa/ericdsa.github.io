@@ -75,7 +75,7 @@
         the morning. Common electronic devices include smartphones, voice assistants,
         and standalone clocks. We also considered mechanical contraptions that would
         wake someone up, from fixtures that would nudge your mattress in the morning,
-        to pillows that would vibrate at a specified time.
+        to pillows that would vibrate at a specified time.<br /><br />
 
         We narrowed down our options to a smartphone app, which would be most
         easily accessible, and a voice assistant, which would be an experimental
@@ -92,26 +92,26 @@
         However, when different events happens from our routine, we
         excitedly wake up, because of the novelty. Our alarms should
         not be repetitive either, and this was the primary motivating factor behind
-        our approach to a new alarm clock.
+        our approach to a new alarm clock.<br /><br />
 
-        There are two main pain points at the moment we first wake up:
+        There are two main pain points at the moment we first wake up:<br /><br />
 
-        1) Habituation - we get used to the alarm sound, and don't
-        react as much to it
+        <strong>1) Habituation:</strong> we get used to the alarm sound, and don't
+        react as much to it<br />
 
-        2) Irritation - The blaring sound of an alarm annoys us, and
+        <strong>2) Irritation:</strong> The blaring sound of an alarm annoys us, and
         the quickest way to comfort is to snooze and go back to bed.
         The blaring sound is the way we start our day; in other words,
-        we start irritated.
+        we start irritated.<br /><br />
 
         In each of these cases, the incentive is only to shut the alarm off,
         not get out of bed and start the day. However, when we have one-off
         events/celebrations, we're excited to get out of bed, often
-        earlier than needed.
+        earlier than needed.<br /><br />
 
         Many alarm clocks lack daily novelty and a reason to start the day.
         They seek to annoy you to remove the problem, and hopefully wake
-        up by the time the problem is addressed.
+        up by the time the problem is addressed.<br /><br />
 
         We want to address this problem by changing the challenges daily for novelty.
         We also aim to create situations that excite users in the morning.
@@ -123,20 +123,20 @@
         <!-- TODO -->
         Before deciding the interface we would use, we decided to narrow down
         on what the alarm clock would do. Then, we could decide the interface
-        best suited for the function. We decided on three possible functions:
+        best suited for the function. We decided on three possible functions:<br /><br />
 
-        1) Conversational - talk about exciting events in your day
+        <strong>1) Conversational:</strong> talk about exciting events in your day<br />
 
-        2) Planner - schedule an exciting event in the morning, then remind
-        you of it
+        <strong>2) Planner:</strong> schedule an exciting event in the morning, then remind
+        you of it<br />
 
-        3) Daily Challenges - smartphone app that changes the challenge
+        <strong>3) Daily Challenges:</strong> smartphone app that changes the challenge
         you do every day. You don't know the challenge until the alarm
-        rings in the morning.
+        rings in the morning.<br /><br />
 
         We decided on the 1st, a conversational interface. This would mean either
         a chatbot on a smartphone or a voice assistant. We chose the latter, since
-        it was most suited for conversations and felt more natural.
+        it was most suited for conversations and felt more natural.<br /><br />
 
         (2) is hard to schedule every day. (3) possible, but need to keep
         creating new activities. (1) depends on calendar, most tailored
@@ -151,7 +151,7 @@
         For our first script, we drew inspiration from the most effective alarm
         clock we knew - our parents. In the general form, someone wakes you up
         by shaking you, followed by a call to action: "You're late for school!"
-        We made our first design considering this analogy of a voice waking you up.
+        We made our first design considering this analogy of a voice waking you up.<br /><br />
 
         The main challenge in this version was whether the user should set an alarm
         for multiple days or just one. Multiple days would be much more complex.
@@ -168,7 +168,7 @@
         Our main feedback from the first script was that most people take a few
         seconds to remember their events in the next day. To reduce this friction,
         we considered a calendar import, to make it easier to check the events
-        happening the next day.
+        happening the next day.<br /><br />
 
         We didn't want the alarm clock to automatically
         set alarms based on the calendar; we wanted to retain user verification
@@ -182,17 +182,17 @@
       <span class="project-content-header capital-letter">SCRIPT V3</span>
       <span class="project-content-p">
         <!-- TODO -->
-        Our feedback was primarily of issues with the flow of the script:
+        Our feedback was primarily of issues with the flow of the script:<br /><br />
 
-        1) Removed Setup: most people set an alarm day by day, not regularly. We had
+        <strong>1) Removed Setup:</strong> most people set an alarm day by day, not regularly. We had
         kept a setup for a repeating alarm as a legacy feature - we removed it
-        after this iteration.
+        after this iteration.<br />
 
-        2) Intents: To generalize the script for any time and/or event, we
+        <strong>2) Intents:</strong> To generalize the script for any time and/or event, we
         added intents and variables for time and event (inspired by the Alexa
-        Skills Kit). For example, "Set my alarm at {timeToSet} for {eventName}."
+        Skills Kit). For example, "Set my alarm at {timeToSet} for {eventName}."<br />
 
-        3) Confirmations: To double check the alarm clock heard user input correctly,
+        <strong>3) Confirmations:</strong> To double check the alarm clock heard user input correctly,
         it reads our user input in a confirmation sentence before proceeding
         to the next task.
       </span>
