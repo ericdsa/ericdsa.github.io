@@ -37,7 +37,7 @@
       <table width=100%>
         <tr>
           <td>
-            <span class="project-header-title capital-letter">STAC</span>
+            <span class="project-header-title capital-letter">SPACE TECHNOLOGIES AT CAL</span>
             <!-- <a href="#top" class="link-top">Top</a>-->
               <span class="project-header-italic capital-letter">SIMULATION FOR AUTONOMOUS RESOURCE ROVER</span>
           </td>
@@ -56,17 +56,18 @@
     <div>
       <span class="project-content-p"></span>
       <span class="project-content-p">
-        Link to STAC website: https://stac.berkeley.edu/project/rover
+        I am involved in Space Technologies at Cal, a student group building
+        and launching multiple space projects, from high altitude balloons
+        to microgravity experiements. I work on an autonomous resource rover,
+        in collaboration with the NASA Ames Research Center. You can check out
+        the project description here: https://stac.berkeley.edu/project/rover.
 
-        Partnership with NASA Ames Research Center
-
-        Autonomous resource rover
-
-        Involves mechanical rover design, autonomous work in making rover
-        move on its own
-
-        My part - simulation technology for an environment to test algorithms +
-        ML models for autonomous decision making
+        There are two subteams who work on the project: a mechanical team
+        building the rover design and resource extraction, and an autonomous
+        team building AI and supporting tools for the rover to navigate its
+        terrain by itself. I am part of the latter team, working in simulation
+        in developing a stable environment to test algorithms and models for
+        autonomous decision making.
       </span>
       <span class="project-content-p">
         <strong>Team: </strong>Autonomous
@@ -75,65 +76,60 @@
       </span>
       <span class="project-content-p"></span>
 
-      <span class="project-content-header capital-letter">BEGINNING OF SIMULATION</span>
+      <span class="project-content-header capital-letter">BEGINNING OF SIMULATION NEEDS</span>
       <span class="project-content-p">
-        We had a Gazebo GUI running as an app, on one Linux machine.
+        In the early stages of the project, we had a Gazebo GUI running
+        as an app on one Linux machine. While executable, it was nearly impossible
+        to port this configuration to any other operating system (or any other
+        machine for that matter).
 
-        Goal - make an environment that can be used on any machine, setup quick
+        Our goal for simulation was to make the setup of this environment fast
+        and simple for anyone wishing to run our rover simulation on their machine.
       </span>
       <img src="/assets/img/transit/" width="100%" alt="">
       <span class="project-content-p"></span>
 
       <span class="project-content-header capital-letter">CONSIDERATIONS</span>
       <span class="project-content-p">
-        Needed a GUI, could not be done in terminal
+        In considering our possible implementations, we ultimately narrowed down
+        our solution with some criteria.
 
-        Needed to see a rover and its environment visually to understand its
-        actions
+        First, we needed a GUI, so this could not be done in a terminal. We needed
+        to see a rover and its environment visually to understand its actions.
 
-        Virtual Machine vs Docker vs Cloning a Github repo
+        We considered using a virtual machine; however, they use a lot of
+        a host's resources, and involved a lot of software and packages that
+        would not be useful for our purpose.
 
-        Can't clone - OS specific problems (Mac vs Windows vs Linux)
-
-        VM - uses a lot of machine's resources
-
-        Decided on Docker
+        We settled on using Docker, which would be able to hold all package
+        installations needed, but would be light enough to not be a burden
+        on the host machine. Additionally, this would make it easier to scale
+        number of environments should we decide to parallelize the number of
+        environments and models training at any point in time.
       </span>
       <img src="/assets/img/transit/" width="100%" alt="">
       <span class="project-content-p"></span>
 
-      <span class="project-content-header capital-letter">DOCKER DEVELOPMENT</span>
+      <span class="project-content-header capital-letter">DOCKER SOLUTION</span>
       <span class="project-content-p">
-        Docker would install all packages and be the central environment
+        Upon running, a Docker container would install all packages and be
+        the central environment. It would start a barebones Ubuntu environment,
+        and a user would VNC to this Docker container's address to see the GUI.
 
-        Would start a local barebones Ubuntu environment
-
-        User would VNC to Docker container (needed for GUI)
-      </span>
-      <img src="/assets/img/transit/" width="100%" alt="">
-      <span class="project-content-p"></span>
-
-      <span class="project-content-header capital-letter">RESULT</span>
-      <span class="project-content-p">
-        github clone docker repo
-
-        start container (with assets and local ML models in a volume mounted
-        to container)
-
-        vnc in web broswer
-
-        tada!
+        This made setup and runtime much faster. A user would clone the docker image
+        and start the container, with assets and local AI models in a volume mounted to the
+        container. Then, they would open their web browser, and VNC into the container,
+        where they would interact with the environment like they would interact
+        with a normal GUI.
       </span>
       <img src="/assets/img/transit/" width="100%" alt="">
       <span class="project-content-p"></span>
 
       <span class="project-content-header capital-letter">NEXT STEPS</span>
       <span class="project-content-p">
-        running ML models in environment
-
-        non-GUI environment
-
-        parallelization for faster training
+        For our next steps, we want to run our models in this environment,
+        implement a non-GUI environment for training without human intervention,
+        and parallelize containers and training to speed up the process.
       </span>
       <img src="/assets/img/transit/" width="100%" alt="">
       <span class="project-content-p"></span>
