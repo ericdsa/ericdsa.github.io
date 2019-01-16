@@ -37,14 +37,14 @@
       <table width=100%>
         <tr>
           <td>
-            <span class="project-header-title capital-letter">STAC</span>
+            <span class="project-header-title capital-letter">SPACE TECHNOLOGIES AT CAL</span>
             <!-- <a href="#top" class="link-top">Top</a>-->
-              <span class="project-header-italic capital-letter">SIMULATION FOR AUTONOMOUS ROVER</span>
+              <span class="project-header-italic capital-letter">SIMULATION FOR AUTONOMOUS RESOURCE ROVER</span>
           </td>
           <td style="float: right">
-            <a style="color:black" href="/"><span class="fas fa-chevron-left project-nav"></span></a>
+            <a style="color:black" href="/healthpals.html"><span class="fas fa-chevron-left project-nav"></span></a>
             &emsp;
-            <a style="color:black" href="/"><span class="fas fa-chevron-right project-nav"></span></a>
+            <a style="color:black" href="/haas.html"><span class="fas fa-chevron-right project-nav"></span></a>
           </td>
         </tr>
       </table>
@@ -56,20 +56,96 @@
     <div>
       <span class="project-content-p"></span>
       <span class="project-content-p">
-        Summary
+        I am involved in Space Technologies at Cal, a student group building
+        and launching multiple space projects, from high altitude balloons
+        to microgravity experiements. I work on an autonomous resource rover,
+        in collaboration with the NASA Ames Research Center. You can check out
+        the project description here: https://stac.berkeley.edu/project/rover.
+
+        <br />
+        <br />
+
+        There are two subteams who work on the project: a mechanical team
+        building the rover design and resource extraction, and an autonomous
+        team building AI and supporting tools for the rover to navigate its
+        terrain by itself. I am part of the latter team, working in simulation
+        in developing a stable environment to test algorithms and models for
+        autonomous decision making.
       </span>
       <span class="project-content-p">
-        <strong>Team: </strong>None
+        <strong>Team: </strong>Autonomous
         <br>
-        <strong>Tools: </strong>Tools
+        <strong>Tools: </strong>ROS (Robot Operating System), Gazebo, Docker
       </span>
       <span class="project-content-p"></span>
 
-      <span class="project-content-header capital-letter">SECTION</span>
+      <span class="project-content-header capital-letter">BEGINNING OF SIMULATION NEEDS</span>
       <span class="project-content-p">
-        Content
+        In the early stages of the project, we had a Gazebo GUI running
+        as an app on one Linux machine. While executable, it was nearly impossible
+        to port this configuration to any other operating system (or any other
+        machine for that matter).
+
+        <br />
+        <br />
+
+        Our goal for simulation was to make the setup of this environment fast
+        and simple for anyone wishing to run our rover simulation on their machine.
       </span>
-      <img src="/assets/img/transit/" width="100%" alt="">
+      <span class="project-content-p"></span>
+
+      <span class="project-content-header capital-letter">CONSIDERATIONS</span>
+      <span class="project-content-p">
+        In considering our possible implementations, we ultimately narrowed down
+        our solution with some criteria.
+
+        <br />
+        <br />
+
+        First, we needed a GUI, so this could not be done in a terminal. We needed
+        to see a rover and its environment visually to understand its actions.
+
+        <br />
+        <br />
+
+        We considered using a virtual machine; however, they use a lot of
+        a host's resources, and involved a lot of software and packages that
+        would not be useful for our purpose.
+
+        <br />
+        <br />
+
+        We settled on using Docker, which would be able to hold all package
+        installations needed, but would be light enough to not be a burden
+        on the host machine. Additionally, this would make it easier to scale
+        number of environments should we decide to parallelize the number of
+        environments and models training at any point in time.
+      </span>
+      <span class="project-content-p"></span>
+
+      <span class="project-content-header capital-letter">DOCKER SOLUTION</span>
+      <span class="project-content-p">
+        Upon running, a Docker container would install all packages and be
+        the central environment. It would start a barebones Ubuntu environment,
+        and a user would VNC to this Docker container's address to see the GUI.
+
+        <br />
+        <br />
+
+        This made setup and runtime much faster. A user would clone the docker image
+        and start the container, with assets and local AI models in a volume mounted to the
+        container. Then, they would open their web browser, and VNC into the container,
+        where they would interact with the environment like they would interact
+        with a normal GUI.
+      </span>
+      <span class="project-content-p"></span>
+
+      <span class="project-content-header capital-letter">NEXT STEPS</span>
+      <span class="project-content-p">
+        For our next steps, we want to run our models in this environment,
+        implement a non-GUI environment for training without human intervention,
+        and parallelize containers and training to speed up the process.
+      </span>
       <span class="project-content-p"></span>
 
     </div>

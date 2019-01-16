@@ -119,6 +119,7 @@
 
 .project-table td {
   vertical-align: top;
+  width: 50%;
 }
 
 .project-header {
@@ -181,11 +182,6 @@
 .project-content-p {
   padding: 0px 0px 50px 0px;
   display: block;
-}
-
-.project-table {
-  border-collapse: separate;
-  border-spacing: 0px 100px;
 }
 
 .left-experience {
