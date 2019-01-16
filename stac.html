@@ -39,7 +39,7 @@
           <td>
             <span class="project-header-title capital-letter">STAC</span>
             <!-- <a href="#top" class="link-top">Top</a>-->
-              <span class="project-header-italic capital-letter">SIMULATION FOR AUTONOMOUS ROVER</span>
+              <span class="project-header-italic capital-letter">SIMULATION FOR AUTONOMOUS RESOURCE ROVER</span>
           </td>
           <td style="float: right">
             <a style="color:black" href="/"><span class="fas fa-chevron-left project-nav"></span></a>
@@ -56,18 +56,84 @@
     <div>
       <span class="project-content-p"></span>
       <span class="project-content-p">
-        Summary
+        Link to STAC website: https://stac.berkeley.edu/project/rover
+
+        Partnership with NASA Ames Research Center
+
+        Autonomous resource rover
+
+        Involves mechanical rover design, autonomous work in making rover
+        move on its own
+
+        My part - simulation technology for an environment to test algorithms +
+        ML models for autonomous decision making
       </span>
       <span class="project-content-p">
-        <strong>Team: </strong>None
+        <strong>Team: </strong>Autonomous
         <br>
-        <strong>Tools: </strong>Tools
+        <strong>Tools: </strong>ROS (Robot Operating System), Gazebo, Docker
       </span>
       <span class="project-content-p"></span>
 
-      <span class="project-content-header capital-letter">SECTION</span>
+      <span class="project-content-header capital-letter">BEGINNING OF SIMULATION</span>
       <span class="project-content-p">
-        Content
+        We had a Gazebo GUI running as an app, on one Linux machine.
+
+        Goal - make an environment that can be used on any machine, setup quick
+      </span>
+      <img src="/assets/img/transit/" width="100%" alt="">
+      <span class="project-content-p"></span>
+
+      <span class="project-content-header capital-letter">CONSIDERATIONS</span>
+      <span class="project-content-p">
+        Needed a GUI, could not be done in terminal
+
+        Needed to see a rover and its environment visually to understand its
+        actions
+
+        Virtual Machine vs Docker vs Cloning a Github repo
+
+        Can't clone - OS specific problems (Mac vs Windows vs Linux)
+
+        VM - uses a lot of machine's resources
+
+        Decided on Docker
+      </span>
+      <img src="/assets/img/transit/" width="100%" alt="">
+      <span class="project-content-p"></span>
+
+      <span class="project-content-header capital-letter">DOCKER DEVELOPMENT</span>
+      <span class="project-content-p">
+        Docker would install all packages and be the central environment
+
+        Would start a local barebones Ubuntu environment
+
+        User would VNC to Docker container (needed for GUI)
+      </span>
+      <img src="/assets/img/transit/" width="100%" alt="">
+      <span class="project-content-p"></span>
+
+      <span class="project-content-header capital-letter">RESULT</span>
+      <span class="project-content-p">
+        github clone docker repo
+
+        start container (with assets and local ML models in a volume mounted
+        to container)
+
+        vnc in web broswer
+
+        tada!
+      </span>
+      <img src="/assets/img/transit/" width="100%" alt="">
+      <span class="project-content-p"></span>
+
+      <span class="project-content-header capital-letter">NEXT STEPS</span>
+      <span class="project-content-p">
+        running ML models in environment
+
+        non-GUI environment
+
+        parallelization for faster training
       </span>
       <img src="/assets/img/transit/" width="100%" alt="">
       <span class="project-content-p"></span>
