@@ -56,40 +56,15 @@
     <div>
       <span class="project-content-p"></span>
       <span class="project-content-p">
-        Fortune 500 company approached us
+        A Fortune 500 company approached the Haas Innovation Analytics Group
+        with a problem they were facing with customer retention. They wanted
+        to use analytics to uncover patterns and develop a possible solution.
+        As a research assistant in the group, I helped start the analysis of
+        this unstructured data.
 
-        goal - customer walks into store with building a project in mind
-
-        buys a list of things for project
-
-        e.g. baking cookies, they need dough, baking sheet, aluminum foil, eggs
-
-        they might buy only 3 of 4 things, but get the 4th thing from another store
-
-        we want them to buy all 4 items from us, but we need to figure out what the 4th item is
-
-
-        Topic modeling
-
-        LDA - Latent Dirichlet Allocation
-          list of topics
-          probability distribution of words for each topic
-          usually unsupervised
-
-        unsupervised = bad, cause there is a constrained list (projects)
-
-        z-label LDA
-          semi supervised learning
-          constraint of topics
-          retains word probability distribution for each topic
-
-        ingested a list of common projects that one would go to this store for
-          applied topic modeling to transactions
-
-        work - implementgin z-label LDA + modifying components to fit transaction data
-
-        Because this project involved a Fortune 500 company, some details
-        are under NDA, feel free to reach out out me if you want to hear more
+        Because this project involved strategy decisions with a private Fortune
+        500 company, some details are under NDA, feel free to reach out out
+        me if you want to hear more
         about this project and my contributions!
       </span>
       <span class="project-content-p">
@@ -97,6 +72,59 @@
         <br>
         <strong>Tools: </strong>Python, C, z-label LDA
       </span>
+      <span class="project-content-p"></span>
+
+      <span class="project-content-header capital-letter">PROBLEM SPACE</span>
+      <span class="project-content-p">
+        This firm (will refer to as the Firm since their name is protected under
+        NDA) had a guess that their customers
+        were not buying everything they could at the Firm's stores. The Firm
+        specialized in do-it-yourself projects. Here is an example of their thought process.
+
+        A customer walks into Store A to collect ingrediants to bake cookies.
+        They have a list of things they need to bake cookies: dough, baking sheet,
+        aluminum foil, and eggs. They buy dough, a baking sheet, and aluminum foil
+        from Store A, but do not buy eggs. Store A's guess is that the customer
+        possibly bought eggs from somewhere else, instead of at their store.
+
+        The Firm wanted their customers to buy everything they need for their
+        projects solely from their store. In summary, they wanted to infer
+        the customer's intent or planned project from their purchases, then
+        stock on items that they thought the customer was not purchasing from them.
+      </span>
+      <img src="" width="100%" alt="">
+      <span class="project-content-p"></span>
+
+      <span class="project-content-header capital-letter">SOLUTION</span>
+      <span class="project-content-p">
+        We chose to approach this problem with topic modeling, a branch
+        of natural language procesing. Topic modeling is a group of algorithms
+        and models that attempts to infer a topic from text.
+
+        For our analysis, we chose Latent Dirichlet Allocation (LDA). In LDA,
+        each topic is modeled
+        as a probability distribution of words. As a block of text is scanned,
+        each word is added to the topic(s) that it comes under. After LDA finishes,
+        the topic with the highest frequency of words is returned as the topic
+        of the text.
+
+        This worked well for identifying topics within customers' transaction data.
+        However, the problem with this is that the results of the analysis included
+        topics that don't necessarily lead to projects (e.g. toasting bread).
+        In other words, the list of projects someone can take on is constrained,
+        and thus, the list of topics is constrained.
+
+        Thus, we adapted our approach to use a variation of LDA, z-label LDA,
+        that would be semi-supervised instead of unsupervised. In this variation,
+        there is a constraint on the topics, and words read in a text only
+        get matched to distributions of the specified topics; if there is no match,
+        they are thrown out of the total analysis.
+
+        To run this variation, we ingested a list of common projects that one
+        would go to the Firm for. Then, we applied topic modeling to customer
+        transactions with these projects in mind.
+      </span>
+      <img src="" width="100%" alt="">
       <span class="project-content-p"></span>
     </div>
   </div>
