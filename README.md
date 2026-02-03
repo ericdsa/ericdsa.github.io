@@ -1,3 +1,3 @@
 # ericdsa.github.io
 
-Personal website
+Personal website for portfolio
